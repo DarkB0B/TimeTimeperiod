@@ -132,13 +132,15 @@ namespace TimeTimePeriod
         {
             return (hours * 3600 + minutes * 60 + seconds);
         }
-        public static Time Plus(Time t1, Time t2)
+       /* public Time Plus(TimePeriod t2)
         {
-            int hourss = t1.Hours + t2.Hours;
-            int minutess = t1.Minutes + t2.Minutes;
-            int secondss = t1.Seconds + t2.Seconds;
-            if(hourss - )
-
-        }
+            TimePeriod t1 = new TimePeriod(this.hours * 3600 + this.minutes * 60 + this.seconds);
+            TimePeriod t3 = t1 + t2;
+            string[] data = t3.ToString().Split(":");
+            byte Hours = Convert.ToByte(data[0]);
+            byte Minutes = Convert.ToByte(data[1]);
+            byte Seconds = Convert.ToByte(data[2]);
+        }*/
+        
     }
 }
