@@ -90,7 +90,7 @@ namespace TimeTimePeriod
             if (this.Equals(other))
             {
                 return 0;
-            }
+            } 
             else if(this.Hours != other.Hours)
             {
                 return this.Hours.CompareTo(other.Hours);
@@ -131,6 +131,14 @@ namespace TimeTimePeriod
         public override int GetHashCode()
         {
             return (hours * 3600 + minutes * 60 + seconds);
+        }
+        public static Time Plus(Time t1, Time t2)
+        {
+            int hourss = t1.Hours + t2.Hours;
+            int minutess = t1.Minutes + t2.Minutes;
+            int secondss = t1.Seconds + t2.Seconds;
+            if(hourss - )
+
         }
     }
 }
