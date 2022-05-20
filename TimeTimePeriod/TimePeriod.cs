@@ -125,7 +125,7 @@ namespace TimeTimePeriod
         public TimePeriod Plus( TimePeriod t2)
         {
             long t3sec = this._seconds + t2._seconds;
-            return new TimePeriod((int)t3sec);         
+            return new TimePeriod(0, 0, (int)t3sec);         
         }
         public static TimePeriod operator +(TimePeriod t1, TimePeriod t2)
         {

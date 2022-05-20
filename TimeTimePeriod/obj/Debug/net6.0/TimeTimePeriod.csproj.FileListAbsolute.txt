@@ -1,0 +1,15 @@
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\bin\Debug\net6.0\TimeTimePeriod.exe
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\bin\Debug\net6.0\TimeTimePeriod.deps.json
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\bin\Debug\net6.0\TimeTimePeriod.runtimeconfig.json
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\bin\Debug\net6.0\TimeTimePeriod.dll
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\bin\Debug\net6.0\ref\TimeTimePeriod.dll
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\bin\Debug\net6.0\TimeTimePeriod.pdb
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\TimeTimePeriod.csproj.AssemblyReference.cache
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\TimeTimePeriod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\TimeTimePeriod.AssemblyInfoInputs.cache
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\TimeTimePeriod.AssemblyInfo.cs
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\TimeTimePeriod.csproj.CoreCompileInputs.cache
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\TimeTimePeriod.dll
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\ref\TimeTimePeriod.dll
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\TimeTimePeriod.pdb
+C:\Users\miecz\Documents\GitHub\TimeTimeperiod\TimeTimePeriod\obj\Debug\net6.0\TimeTimePeriod.genruntimeconfig.cache

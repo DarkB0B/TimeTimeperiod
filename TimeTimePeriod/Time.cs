@@ -132,7 +132,7 @@ namespace TimeTimePeriod
         {
             return (hours * 3600 + minutes * 60 + seconds);
         }
-       /* public Time Plus(TimePeriod t2)
+        public Time Plus(TimePeriod t2)
         {
             TimePeriod t1 = new TimePeriod(this.hours * 3600 + this.minutes * 60 + this.seconds);
             TimePeriod t3 = t1 + t2;
@@ -140,7 +140,7 @@ namespace TimeTimePeriod
             byte Hours = Convert.ToByte(data[0]);
             byte Minutes = Convert.ToByte(data[1]);
             byte Seconds = Convert.ToByte(data[2]);
-        }*/
-        
+        }
+
     }
 }
