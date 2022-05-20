@@ -131,6 +131,10 @@ namespace TimeTimePeriod
         {
             return t1.Plus(t2);
         }
+        public static TimePeriod operator -(TimePeriod t1, TimePeriod t2)
+        {
+            return t1.Substract(t2);
+        }
         public TimePeriod Substract(TimePeriod t2)
         {
             long sec = this._seconds - t2._seconds;

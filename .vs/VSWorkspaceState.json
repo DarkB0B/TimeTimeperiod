@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\TimeTimePeriod"
+    "\\TimeTimePeriod",
+    "\\UnitTests"
   ],
-  "SelectedNode": "\\TimeTimePeriod\\Time.cs",
+  "SelectedNode": "\\Time, TimePeriod.sln",
   "PreviewInSolutionExplorer": false
 }

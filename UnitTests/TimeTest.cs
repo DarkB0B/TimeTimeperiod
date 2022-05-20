@@ -151,6 +151,7 @@ namespace UnitTests
             Time t2 = new Time((byte)a, (byte)b, (byte)d);
             Assert.IsTrue(t1 != t2);
         }
+        
     }
 
 }

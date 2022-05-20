@@ -132,14 +132,77 @@ namespace TimeTimePeriod
         {
             return (hours * 3600 + minutes * 60 + seconds);
         }
+        public static Time operator +(Time t1, TimePeriod t2)
+        {
+            return t1.Plus(t2);
+        }
         public Time Plus(TimePeriod t2)
         {
-            TimePeriod t1 = new TimePeriod(this.hours * 3600 + this.minutes * 60 + this.seconds);
+            TimePeriod t1 = new TimePeriod((int)this.hours, (int)this.minutes, (int)this.seconds);
             TimePeriod t3 = t1 + t2;
+            string[] data = t3.ToString().Split(":");         
+            int Hours = Convert.ToInt32(data[0]);
+            int Minutes = Convert.ToInt32(data[1]);
+            int Seconds = Convert.ToInt32(data[2]);            
+            while (Hours >= 24)
+            {
+                Hours -= 24;
+            }
+            return new Time((byte)Hours, (byte)Minutes, (byte)Seconds);
+            
+        }
+        public Time Substract(TimePeriod t2)
+        {
+            TimePeriod t1 = new TimePeriod(this.hours * 3600 + this.minutes * 60 + this.seconds);
+            TimePeriod t3 = t1 - t2;
             string[] data = t3.ToString().Split(":");
-            byte Hours = Convert.ToByte(data[0]);
-            byte Minutes = Convert.ToByte(data[1]);
-            byte Seconds = Convert.ToByte(data[2]);
+            int Hours = Convert.ToInt32(data[0]);
+            int Minutes = Convert.ToInt32(data[1]);
+            int Seconds = Convert.ToInt32(data[2]);
+            if (Hours < 0)
+            {
+                throw new ArgumentException();
+            }
+            if (Minutes < 0)
+            {
+                if(Hours >= 1) 
+                {
+                    Hours -= 1;
+                    Minutes += 60;
+                }
+                else
+                {
+                    throw new ArgumentException();
+                }
+                
+            }
+            if (Seconds < 0)
+            {
+                if (Minutes >= 1)
+                {
+                    Minutes -= 1;
+                    Seconds += 60;
+                }
+                else
+                {
+                    if (Hours >= 1)
+                    {
+                        Hours -= 1;
+                        Minutes += 59;
+                        Seconds += 60;
+                    }
+                    else
+                    {
+                        throw new ArgumentException();
+                    }
+                }              
+            }
+            Time result = new Time((byte)Hours, (byte)Minutes, (byte)Seconds);
+            return result;
+        }
+        public static Time operator -(Time t1, TimePeriod t2)
+        {
+            return t1.Substract(t2);
         }
 
     }

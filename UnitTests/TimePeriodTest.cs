@@ -130,32 +130,32 @@ namespace UnitTests
         [DataRow(8,6,5)]
         public void timeperiodequals(int a, int b, int c)
         {
-            Time t1 = new Time((byte)a, (byte)b, (byte)c);
-            Time t2 = new Time((byte)a, (byte)b, (byte)c);
+            TimePeriod t1 = new TimePeriod(a, b, c);
+            TimePeriod t2 = new TimePeriod(a, b, c);
             Assert.IsTrue(t1.Equals(t2));
         }
         [TestMethod]
         [DataRow(8, 6, 5)]
         public void timeperiodequals2(int a, int b, int c)
         {
-            Time t1 = new Time((byte)a, (byte)b, (byte)c);
-            Time t2 = new Time((byte)a, (byte)b, (byte)c);
+            TimePeriod t1 = new TimePeriod(a, b, c);
+            TimePeriod t2 = new TimePeriod(a, b, c);
             Assert.IsTrue(t1 == t2);
         }
         [TestMethod]
         [DataRow(8, 6, 5, 7)]
         public void timeperiodgreaterthan(int a, int b, int c, int d)
         {
-            Time t1 = new Time((byte)a, (byte)b, (byte)c);
-            Time t2 = new Time((byte)a, (byte)b, (byte)d);
+            TimePeriod t1 = new TimePeriod(a, b, c);
+            TimePeriod t2 = new TimePeriod(a, b, d);
             Assert.IsTrue(t1 < t2);
         }
         [TestMethod]
         [DataRow(8, 6, 5)]
         public void timeperiodgreaterthanfalse(int a, int b, int c)
         {
-            Time t1 = new Time((byte)a, (byte)b, (byte)c);
-            Time t2 = new Time((byte)a, (byte)b, (byte)c);
+            TimePeriod t1 = new TimePeriod(a, b, c);
+            TimePeriod t2 = new TimePeriod(a, b, c);
             Assert.IsFalse(t1 < t2);
         }
 
@@ -163,16 +163,16 @@ namespace UnitTests
         [DataRow(10, 16, 25, 57)]
         public void timeperiodgreaterthanorequal1(int a, int b, int c, int d)
         {
-            Time t1 = new Time((byte)a, (byte)b, (byte)c);
-            Time t2 = new Time((byte)a, (byte)b, (byte)d);
+            TimePeriod t1 = new TimePeriod(a, b, c);
+            TimePeriod t2 = new TimePeriod(a, b, d);
             Assert.IsTrue(t1 <= t2);
         }
         [TestMethod]
         [DataRow(10, 16, 25)]
         public void timeperiodgreaterthanorequal2(int a, int b, int c)
         {
-            Time t1 = new Time((byte)a, (byte)b, (byte)c);
-            Time t2 = new Time((byte)a, (byte)b, (byte)c);
+            TimePeriod t1 = new TimePeriod(a, b, c);
+            TimePeriod t2 = new TimePeriod(a, b, c);
             Assert.IsTrue(t1 <= t2);
         }
 
@@ -180,8 +180,8 @@ namespace UnitTests
         [DataRow(10, 16, 57, 51)]
         public void timeperiodgreaterthanorequal3(int a, int b, int c, int d)
         {
-            Time t1 = new Time((byte)a, (byte)b, (byte)c);
-            Time t2 = new Time((byte)a, (byte)b, (byte)d);
+            TimePeriod t1 = new TimePeriod(a, b, c);
+            TimePeriod t2 = new TimePeriod(a, b, d);
             Assert.IsTrue(t1 >= t2);
         }
         [TestMethod]
