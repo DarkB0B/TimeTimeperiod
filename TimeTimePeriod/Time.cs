@@ -151,9 +151,9 @@ namespace TimeTimePeriod
             return new Time((byte)Hours, (byte)Minutes, (byte)Seconds);
             
         }
-        public Time Substract(TimePeriod t2)
+        public static Time Substract(Time t, TimePeriod t2)
         {
-            TimePeriod t1 = new TimePeriod(this.hours * 3600 + this.minutes * 60 + this.seconds);
+            TimePeriod t1 = new TimePeriod(t.ToString());
             TimePeriod t3 = t1 - t2;
             string[] data = t3.ToString().Split(":");
             int Hours = Convert.ToInt32(data[0]);
@@ -202,7 +202,7 @@ namespace TimeTimePeriod
         }
         public static Time operator -(Time t1, TimePeriod t2)
         {
-            return t1.Substract(t2);
+            return Time.Substract(t1, t2);
         }
 
     }

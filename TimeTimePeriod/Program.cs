@@ -6,7 +6,7 @@ Console.WriteLine("Hello, World!");
 
 Time a  = new Time((byte)23, (byte)59, (byte)1);
 TimePeriod b = new TimePeriod(0, 2, 0);
-Time z = a.Plus(b);
+Time z = Time.Substract(a, b);
 
 Console.WriteLine(z.ToString());
 
